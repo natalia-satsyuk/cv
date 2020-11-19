@@ -1,0 +1,28 @@
+/* Arrows */
+.slick-prev,
+.slick-next {
+    top: 72%;
+    z-index: 1;
+}
+
+.slick-next {
+  	@include respond-to(wide){
+		right: 0;
+	}   
+}
+
+.slick-prev {
+   	@include respond-to(wide){
+		left: 0;
+	}   
+}
+
+.slick-next:before {
+    content: "\f054";
+    font-family: "FontAwesome";
+}
+.slick-prev:before {
+    content: "\f053";
+    font-family: "FontAwesome";
+}
+
